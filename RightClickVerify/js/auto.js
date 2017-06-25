@@ -1,0 +1,1 @@
+if(window.location.host === 'www.google.com' && (window.top&&window.top!=window)&&location.pathname.toString().match(/bframe/)){document.oncontextmenu = function(){return false;};$(window).mousedown(function(s){if(s.button==2){document.getElementById("recaptcha-verify-button").click();}});}

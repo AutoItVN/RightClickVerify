@@ -1,0 +1,27 @@
+﻿{
+  "name": "Right click vertify reCAPTCHA editted by Kennytransc",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "homepage_url" : "https://www.facebook.com/kennytransc",
+  "description": "Tự động xác nhận reCAPTCHA khi click chuột phải! :v",
+  "icons": {"16" : "1.png",
+	    "48": "2.png",
+	    "128": "3.png"
+	},
+  "browser_action": {
+    "default_icon": {"16" : "1.png"},
+
+    "default_popup": "popup.html"
+  },
+
+"content_scripts": [
+  {
+	"all_frames": true,
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["js/jquery.js", "js/auto.js"]
+  }
+]
+
+}
